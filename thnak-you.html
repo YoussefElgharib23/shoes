@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .has-styled-gradient {
+            height: 100vh;
+            background: linear-gradient(270deg, #aed0ed, #f3bbf0);
+            background-size: 400% 400%;
+
+            -webkit-animation: AnimationName 30s ease infinite;
+            -moz-animation: AnimationName 30s ease infinite;
+            animation: AnimationName 30s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        .no-back {
+            background-color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex align-items-center has-styled-gradient">
+        <div class="d-flex align-items-center flex-column w-100">
+            <img src="images/LOGO.png" height="100" width="100" alt="">
+            <div class="row my-5 w-100">
+                <div class="col-md-8 mx-auto">
+                    <div class="card text-center shadow-lg rounded-lg no-back">
+                        <div class="card-header pt-2 pb-2">
+                            <h1 class="my-3">مـبـروك!! لقد تم تسجيل طلبكم بنجاح</h1>
+                        </div>
+                        <div class="card-body p-5">
+                            <h5 class="card-title">! المرجوا الإنتباه إلى هاتفك الخاص</h5>
+                            <p class="card-text">
+                                سيقوم ممثل خدمة العملاء بالإتصال بك خلال 24 ساعة
+                            </p>
+                            <p class="card-text">
+                                06.69.90.38.70
+                                <br>
+                                06.74.05.32.79
+                                <br>
+                                06.65.73.08.05
+                            </p>
+                            <a href="#" class="btn btn-primary">الرجوع إلى المتجر</a>
+                        </div>
+                        <div class="card-footer text-muted p-3">
+                            ـ نأمل الرد علينا لتحديد موعد إستلام الطلبية
+                            <br>
+                            ـ في حالة عدم الإجابة على إتصالنا سنلغي طلبك
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
