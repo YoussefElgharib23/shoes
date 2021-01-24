@@ -8,14 +8,23 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Document</title>
     <style>
+        body {
+            overflow: hidden;
+            position: relative;
+            top: -100px;
+        }
+
         .has-styled-gradient {
-            height: 100vh;
-            background: linear-gradient(270deg, #aed0ed, #f3bbf0);
+            background: linear-gradient(270deg, #6abaff, #ff7bf8);
             background-size: 400% 400%;
 
             -webkit-animation: AnimationName 30s ease infinite;
             -moz-animation: AnimationName 30s ease infinite;
             animation: AnimationName 30s ease infinite;
+            border-bottom-left-radius: 45%;
+            border-bottom-right-radius: 45%;
+            margin: -100px;
+            padding: 100px;
         }
 
         @-webkit-keyframes AnimationName {
@@ -68,7 +77,7 @@
 
 <body>
     <div class="d-flex align-items-center has-styled-gradient">
-        <div class="d-flex align-items-center flex-column w-100">
+        <div class="d-flex align-items-center flex-column w-100" style="position: relative; top: 150px">
             <img src="images/LOGO.png" height="100" width="100" alt="">
             <div class="row my-5 w-100">
                 <div class="col-md-8 mx-auto">
@@ -90,10 +99,12 @@
                             </p>
                             <a href="#" class="btn btn-primary">الرجوع إلى المتجر</a>
                         </div>
-                        <div class="card-footer text-muted p-3">
-                            ـ نأمل الرد علينا لتحديد موعد إستلام الطلبية
-                            <br>
-                            ـ في حالة عدم الإجابة على إتصالنا سنلغي طلبك
+                        <div class="card-footer text-muted p-2">
+                            <p>
+                                ـ نأمل الرد علينا لتحديد موعد إستلام الطلبية
+                                <br>
+                                ـ في حالة عدم الإجابة على إتصالنا سنلغي طلبك
+                            </p>
                         </div>
                     </div>
                 </div>
